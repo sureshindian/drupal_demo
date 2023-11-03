@@ -1,0 +1,4 @@
+customjsfom:
+  version:  '1.0'
+  js: 
+    js/customuser.js: {}

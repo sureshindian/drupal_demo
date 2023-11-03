@@ -1,0 +1,22 @@
+name: starkit
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - starkit/base
+  - starkit/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - starkit/user
+  core/drupal.dropbutton:
+    - starkit/dropbutton
+  core/drupal.dialog:
+    - starkit/dialog
+  file/drupal.file:
+    - starkit/file
+  core/drupal.progress:
+    - starkit/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.5'

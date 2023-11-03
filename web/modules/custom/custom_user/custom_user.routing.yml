@@ -1,0 +1,15 @@
+custom_user.custom_user_details:
+  path: '/get-user-details'
+  defaults: 
+    _form:  '\Drupal\custom_user\Form\CustomUserDetails'
+    _title: 'Custom User'
+  requirements:
+    _permission: 'access content'
+
+custom-modal-page:
+  path: '/modal-form-link'
+  defaults:
+    _controller: '\Drupal\custom_user\Controller\CustomUserController::modalLink'
+    _title: 'Open modal page'
+  requirements:
+    _permission: 'access content'

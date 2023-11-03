@@ -1,0 +1,22 @@
+uuid: 6dae638e-8763-4086-9ea8-b8435fc91949
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.technoloy
+id: node.technoloy.sticky
+field_name: sticky
+entity_type: node
+bundle: technoloy
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

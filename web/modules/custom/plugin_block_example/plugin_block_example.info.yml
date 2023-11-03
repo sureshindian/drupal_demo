@@ -1,0 +1,6 @@
+name: Sample Block
+description: Simple Block for D4drupal
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:block

@@ -1,0 +1,8 @@
+name: Custom user Form
+description: custom user details stored 
+package: Users
+type: module
+core_version_requirement: ^9.2 || ^10
+
+dependencies:
+  - drupal:block
