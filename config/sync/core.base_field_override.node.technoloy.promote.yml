@@ -1,0 +1,22 @@
+uuid: 7d8adf6f-af63-4a05-90e9-426569f6f147
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.technoloy
+id: node.technoloy.promote
+field_name: promote
+entity_type: node
+bundle: technoloy
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

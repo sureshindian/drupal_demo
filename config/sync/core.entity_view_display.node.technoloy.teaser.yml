@@ -5,10 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.technoloy.body
+    - field.field.node.technoloy.field_image
     - field.field.node.technoloy.field_tech_profile_image
-    - field.field.node.technoloy.field_title
+    - field.field.node.technoloy.field_techbanner_image
+    - image.style.medium
     - node.type.technoloy
   module:
+    - image
     - text
     - user
 id: node.technoloy.teaser
@@ -24,6 +27,17 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -31,4 +45,5 @@ content:
     region: content
 hidden:
   field_tech_profile_image: true
-  field_title: true
+  field_techbanner_image: true
+  langcode: true

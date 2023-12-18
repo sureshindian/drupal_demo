@@ -1,0 +1,18 @@
+uuid: 31ed566c-f682-4684-8dfe-7149d82e5637
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.technoloy
+id: node.technoloy.changed
+field_name: changed
+entity_type: node
+bundle: technoloy
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

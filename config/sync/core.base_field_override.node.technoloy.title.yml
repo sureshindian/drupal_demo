@@ -1,0 +1,18 @@
+uuid: 93eb17af-e502-4075-85c3-2cbdf490689f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.technoloy
+id: node.technoloy.title
+field_name: title
+entity_type: node
+bundle: technoloy
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

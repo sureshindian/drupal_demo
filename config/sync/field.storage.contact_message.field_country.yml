@@ -1,0 +1,30 @@
+uuid: 748455ee-415f-4d2b-8104-0b0789417f39
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_country
+field_name: field_country
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: india
+      label: india
+    -
+      value: pak
+      label: pak
+    -
+      value: Aus
+      label: Aus
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,35 @@
+name: disney Theme
+type: theme
+description: 'disney  Website.'
+package: Other
+core_version_requirement: ^8 || ^9 || ^10
+
+libraies:
+  -google/global-styling
+base theme: stable9
+regions:
+sidebar: 'Disney Sidebar'
+main_navigation: 'Disney Navigation'
+header: 'Header'
+homepage: 'Homepage'
+footer: 'Footer'
+content: 'Content'
+help : 'Help'
+breadcurm: 'BreadCurm'
+highlighted: 'Highlighted'
+primary_menu: 'Primary menu'
+screenshot: 'disney.jpg'
+hidden: false
+logo: images/logo.png
+features:
+  - comment_user_verification
+  - logo
+  - favicon
+  - node_user_picture
+libraries-override:
+  stable9/base: false
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+
+
+

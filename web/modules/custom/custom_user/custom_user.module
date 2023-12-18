@@ -18,3 +18,13 @@ function custom_user_theme($existing, $type, $theme, $path) {
     ]
   ];
 }
+
+
+// function custom_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+//   /**
+//    * Custom javascript for the search form
+//    */
+//   // if($form['#id'] == 'custom_user_details') {
+//   //   $form['#attached']['library'][] = 'custom_user/customjsform';
+//   // }
+// }

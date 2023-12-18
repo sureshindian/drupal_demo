@@ -1,0 +1,22 @@
+uuid: 1b3a42df-6fc2-4687-9240-ffcdde282031
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - disney
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: disney_messages
+theme: disney
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

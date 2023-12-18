@@ -1,0 +1,19 @@
+uuid: 39068c9a-6738-4a2b-a9b9-e069b7c4d20a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_user_email
+id: contact_message.personal.field_user_email
+field_name: field_user_email
+entity_type: contact_message
+bundle: personal
+label: 'User Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

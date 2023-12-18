@@ -1,0 +1,35 @@
+uuid: 4c2bf128-03e3-4a02-9e45-83a3a7833502
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_media_content
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
+id: contact_message.personal.field_media_content
+field_name: field_media_content
+entity_type: contact_message
+bundle: personal
+label: 'Media content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference

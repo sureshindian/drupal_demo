@@ -4,5 +4,8 @@ package: Users
 type: module
 core_version_requirement: ^9.2 || ^10
 
+libraries:
+  - custom_user/customjsform
+
 dependencies:
   - drupal:block

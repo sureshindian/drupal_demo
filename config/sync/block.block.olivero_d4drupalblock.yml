@@ -1,0 +1,21 @@
+uuid: 0b71b1ab-885f-42a7-a943-cf11a7d2f676
+langcode: en
+status: true
+dependencies:
+  module:
+    - plugin_block_example
+  theme:
+    - olivero
+id: olivero_d4drupalblock
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: plugin_block_example
+settings:
+  id: plugin_block_example
+  label: 'D4drupal Block'
+  label_display: visible
+  provider: plugin_block_example
+  prefix: ''
+visibility: {  }

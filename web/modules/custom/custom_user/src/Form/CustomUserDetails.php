@@ -7,6 +7,8 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\InvokeCommand;
 use Drupal\Core\Messenger\Messenger;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class CustomUserDetails extends FormBase {
 
@@ -17,7 +19,7 @@ class CustomUserDetails extends FormBase {
 
 
     public function buildForm(array $form,FormStateInterface $form_state){
-        $form['#attached']['library'][] = "custom_user/customjsfom";
+        $form['#attached']['library'][] = "custom_user/customjsform";
         $form['username'] = [
             '#type' =>'textfield',
             '#title'=>'username',
@@ -40,9 +42,6 @@ class CustomUserDetails extends FormBase {
         $form['submit'] = [
             '#type' => 'submit',
             '#value' =>'submit',
-            '#ajax'=> [
-                'callaback'=>'::userFormValidation'
-            ]
             ];
 
 
@@ -60,9 +59,9 @@ class CustomUserDetails extends FormBase {
 
     public function validateForm(array &$form, FormStateInterface $form_state) {
 
-        if (strlen($form_state->getValue('username')) < 6) {
-            $form_state->setErrorByname('username', "please make sure your username length is more than 5");
-        }
+        // if (strlen($form_state->getValue('username')) < 6) {
+        //     $form_state->setErrorByname('username', "please make sure your username length is more than 5");
+        // }
     }
 
     public function submitForm(array &$form, FormStateInterface $form_state){
@@ -74,7 +73,11 @@ class CustomUserDetails extends FormBase {
             'mail' => $value['usermail'],
             'gender' => $value['usergender'],
         ])->execute();
-
-
+        $url = Url::fromRoute('<front>');
+        return new RedirectResponse($url->toString());
     }
+
+      //  $form_state->setRedirectUrl(\Drupal::url::fromUri('internal:'.'/node/add/movies'));
+
+    
 }

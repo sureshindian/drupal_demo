@@ -1,0 +1,23 @@
+uuid: cde3738e-6d7c-4140-bf10-6a4ba5ad1564
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - disney
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: disney_search_form_narrow
+theme: disney
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

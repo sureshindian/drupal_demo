@@ -1,0 +1,19 @@
+uuid: f48a4b86-076f-452e-a326-d085a5707cf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_written_by
+    - node.type.movies
+id: node.movies.field_written_by
+field_name: field_written_by
+entity_type: node
+bundle: movies
+label: 'Written by'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

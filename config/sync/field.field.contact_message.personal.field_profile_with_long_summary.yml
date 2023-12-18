@@ -1,0 +1,24 @@
+uuid: a812fcb9-6df9-4e74-afd8-34b3dc7c9400
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_profile_with_long_summary
+  module:
+    - text
+id: contact_message.personal.field_profile_with_long_summary
+field_name: field_profile_with_long_summary
+entity_type: contact_message
+bundle: personal
+label: 'Profile with long summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,21 @@
+uuid: c810c049-342b-43e7-b418-2d3c71d3d778
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_user
+  theme:
+    - starkit
+id: starkit_customuserblock
+theme: starkit
+region: sidebar_second
+weight: 0
+provider: null
+plugin: custom_user_block
+settings:
+  id: custom_user_block
+  label: 'Custom user block'
+  label_display: visible
+  provider: custom_user
+  prefix: ''
+visibility: {  }

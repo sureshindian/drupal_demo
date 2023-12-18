@@ -1,0 +1,21 @@
+uuid: fdfdcd36-6920-4d40-9544-05e9a0e259b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_user
+  theme:
+    - olivero
+id: olivero_customuserblock
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: custom_user_block
+settings:
+  id: custom_user_block
+  label: 'User Form'
+  label_display: visible
+  provider: custom_user
+  prefix: ''
+visibility: {  }

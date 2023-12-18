@@ -1,0 +1,8 @@
+settings:
+  plugins:
+    ckeditor5_codeBlock:
+      languages:
+        0:
+          label: 'எளிய உரை'
+        9:
+          label: பிஎச்பி

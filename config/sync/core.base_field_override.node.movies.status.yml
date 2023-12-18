@@ -1,0 +1,22 @@
+uuid: 31a5882c-bb2b-4ff2-b647-4f0a80b3bc20
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movies
+id: node.movies.status
+field_name: status
+entity_type: node
+bundle: movies
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

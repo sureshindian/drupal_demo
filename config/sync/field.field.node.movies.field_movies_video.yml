@@ -1,0 +1,29 @@
+uuid: 71ab1df8-48b6-497e-aafc-cedced0eed05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movies_video
+    - node.type.movies
+  module:
+    - entity_reference_revisions
+id: node.movies.field_movies_video
+field_name: field_movies_video
+entity_type: node
+bundle: movies
+label: 'Movies video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      movie_videos:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

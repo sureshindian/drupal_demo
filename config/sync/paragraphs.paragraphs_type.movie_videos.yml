@@ -1,0 +1,10 @@
+uuid: 59f808c0-b9ff-494b-b56a-52ed8ab977d5
+langcode: en
+status: true
+dependencies: {  }
+id: movie_videos
+label: 'Movie videos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

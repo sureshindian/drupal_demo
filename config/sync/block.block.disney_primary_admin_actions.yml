@@ -1,0 +1,20 @@
+uuid: cdc417e8-9950-480f-bdbc-ca59a9c1aa38
+langcode: en
+status: true
+dependencies:
+  theme:
+    - disney
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: disney_primary_admin_actions
+theme: disney
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

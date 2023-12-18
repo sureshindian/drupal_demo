@@ -1,0 +1,21 @@
+uuid: a982d3d8-bf86-4f3f-8db1-e5b5434fb883
+langcode: en
+status: true
+dependencies:
+  module:
+    - plugin_block_example
+  theme:
+    - disney
+id: disney_d4drupalblock
+theme: disney
+region: sidebar_first
+weight: 0
+provider: null
+plugin: plugin_block_example
+settings:
+  id: plugin_block_example
+  label: 'D4drupal Block'
+  label_display: visible
+  provider: plugin_block_example
+  prefix: ''
+visibility: {  }

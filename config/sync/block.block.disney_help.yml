@@ -1,0 +1,22 @@
+uuid: 0b7bedf0-4ee3-481e-a864-b82b9dbb17be
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - disney
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: disney_help
+theme: disney
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

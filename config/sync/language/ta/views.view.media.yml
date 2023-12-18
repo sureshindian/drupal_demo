@@ -1,0 +1,63 @@
+label: ஊடகம்
+display:
+  default:
+    display_title: இயல்பான
+    display_options:
+      title: ஊடகம்
+      fields:
+        media_bulk_form:
+          action_title: செயல்
+        thumbnail__target_id:
+          separator: ', '
+        name:
+          separator: ', '
+        bundle:
+          label: வகை
+          separator: ', '
+        uid:
+          label: எழுத்தாளர்
+          separator: ', '
+        status:
+          label: நிலை
+          settings:
+            format_custom_false: வெளியிடப்படாத
+            format_custom_true: வெளியிடப்பட்டது
+          separator: ', '
+        changed:
+          label: மாற்றப்பட்டது
+          separator: ', '
+        operations:
+          label: செயல்பாடுகள்
+      pager:
+        options:
+          tags:
+            next: 'அடுத்த ›'
+            previous: '‹ முந்திய'
+          expose:
+            items_per_page_options_all_label: '- அனைத்தும் -'
+      exposed_form:
+        options:
+          submit_button: வடிகட்டி
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      filters:
+        bundle:
+          expose:
+            label: வகை
+        status:
+          expose:
+            label: சரி
+          group_info:
+            group_items:
+              1:
+                title: வெளியிடப்பட்டது
+              2:
+                title: வெளியிடப்படாத
+        langcode:
+          expose:
+            label: மொழி
+  media_page_list:
+    display_title: ஊடகம்
+    display_options:
+      menu:
+        title: ஊடகம்

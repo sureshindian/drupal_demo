@@ -44,7 +44,7 @@ class CustomUserController extends ControllerBase {
     public function customTemplate() {
 
         return [
-            '#theme' => 'custom_user',
+            '#theme' => 'custom',
             '#data' => 'Welcome to our suresh Channel',
         ];
 

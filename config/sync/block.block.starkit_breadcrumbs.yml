@@ -1,0 +1,22 @@
+uuid: 2f86f63a-81e6-420d-ba6b-f29110e0830d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starkit
+_core:
+  default_config_hash: VShtwe72J2j41BJzApoNbs8l554EpngM5RTObxM7yiw
+id: starkit_breadcrumbs
+theme: starkit
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

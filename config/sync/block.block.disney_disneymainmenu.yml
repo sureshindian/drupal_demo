@@ -1,0 +1,25 @@
+uuid: 0d408917-ee51-485c-8bd9-49ece3b3f07a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.disney-main-menu
+  module:
+    - system
+  theme:
+    - disney
+id: disney_disneymainmenu
+theme: disney
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:disney-main-menu'
+settings:
+  id: 'system_menu_block:disney-main-menu'
+  label: 'Disney Main Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

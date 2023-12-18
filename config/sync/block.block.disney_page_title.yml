@@ -1,0 +1,20 @@
+uuid: afae6f83-178d-4f91-b152-445cf9a58aad
+langcode: en
+status: true
+dependencies:
+  theme:
+    - disney
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: disney_page_title
+theme: disney
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

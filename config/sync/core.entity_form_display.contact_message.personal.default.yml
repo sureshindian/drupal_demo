@@ -1,0 +1,152 @@
+uuid: d9297cfe-5e78-4f8a-870b-e07df21429a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.field.contact_message.personal.field_country
+    - field.field.contact_message.personal.field_media_content
+    - field.field.contact_message.personal.field_points
+    - field.field.contact_message.personal.field_profile_image
+    - field.field.contact_message.personal.field_profile_long_des
+    - field.field.contact_message.personal.field_profile_with_long_summary
+    - field.field.contact_message.personal.field_sample_content_
+    - field.field.contact_message.personal.field_text_formatted
+    - field.field.contact_message.personal.field_time_
+    - field.field.contact_message.personal.field_user_email
+    - image.style.thumbnail
+  module:
+    - image
+    - media_library
+    - text
+id: contact_message.personal.default
+targetEntityType: contact_message
+bundle: personal
+mode: default
+content:
+  copy:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_country:
+    type: options_select
+    weight: 57
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_content:
+    type: media_library_widget
+    weight: 56
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_points:
+    type: options_select
+    weight: 54
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_profile_image:
+    type: image_image
+    weight: 55
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_profile_long_des:
+    type: text_textarea
+    weight: 59
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_with_long_summary:
+    type: text_textarea_with_summary
+    weight: 60
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_sample_content_:
+    type: entity_reference_autocomplete
+    weight: 52
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_formatted:
+    type: text_textfield
+    weight: 58
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_time_:
+    type: datetime_timestamp
+    weight: 53
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_user_email:
+    type: email_default
+    weight: 51
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  mail:
+    weight: -40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: -50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  preview:
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  recipient:
+    weight: -30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

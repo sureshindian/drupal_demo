@@ -1,4 +1,8 @@
-customjsfom:
-  version:  '1.0'
+customjsform:
+  version: '1.0'
   js: 
-    js/customuser.js: {}
+    js/customuser.js: { }
+    
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

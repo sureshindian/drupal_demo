@@ -1,0 +1,29 @@
+uuid: 76609264-98c2-407c-8dd8-8331d84c9693
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_user
+    - node
+  theme:
+    - disney
+id: disney_customuserblock
+theme: disney
+region: sidebar_first
+weight: 0
+provider: null
+plugin: custom_user_block
+settings:
+  id: custom_user_block
+  label: 'Custom user block'
+  label_display: visible
+  provider: custom_user
+  prefix: hi
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      technoloy: technoloy

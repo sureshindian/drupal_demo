@@ -1,0 +1,22 @@
+uuid: 1d26c9fb-4e93-49fe-97ce-a7923d737420
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.technoloy
+id: node.technoloy.status
+field_name: status
+entity_type: node
+bundle: technoloy
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

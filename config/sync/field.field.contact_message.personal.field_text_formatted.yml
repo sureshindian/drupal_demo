@@ -1,0 +1,24 @@
+uuid: 1253f856-188f-48ce-a243-4d15f0b65076
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_text_formatted
+    - filter.format.full_html
+  module:
+    - text
+id: contact_message.personal.field_text_formatted
+field_name: field_text_formatted
+entity_type: contact_message
+bundle: personal
+label: 'Text Formatted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text

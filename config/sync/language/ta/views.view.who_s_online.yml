@@ -1,0 +1,14 @@
+display:
+  default:
+    display_title: இயல்பான
+    display_options:
+      exposed_form:
+        options:
+          submit_button: விண்ணப்பி
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      filters:
+        access:
+          expose:
+            label: 'கடைசி அனுகல்'
+            description: 'பயனர் கடைசியாக ஒரு பக்கத்தை பார்வையிட்டபின் இத்தனை நேரம் அவர் நிகழ்நிலையில் இருப்பதாக எடுத்துக் கொள்ளப்படும்.'

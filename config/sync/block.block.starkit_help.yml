@@ -1,0 +1,22 @@
+uuid: fdebdbc9-f21b-458d-a7d0-9009ecf2d85e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - starkit
+_core:
+  default_config_hash: S0Y16qIQfKiOEzWlddOGk3u_BKwAruAheA8VVFfGbLc
+id: starkit_help
+theme: starkit
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

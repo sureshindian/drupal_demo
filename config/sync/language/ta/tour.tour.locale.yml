@@ -1,0 +1,8 @@
+label: மொழிபெயர்ப்பு
+tips:
+  locale-language:
+    label: 'மொழிபெயர்ப்பு மொழி'
+  locale-search:
+    label: தேடல்
+  locale-translate:
+    label: மொழிபெயர்ச்சி

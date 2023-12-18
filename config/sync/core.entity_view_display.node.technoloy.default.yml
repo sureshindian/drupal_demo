@@ -4,13 +4,155 @@ status: true
 dependencies:
   config:
     - field.field.node.technoloy.body
+    - field.field.node.technoloy.field_image
     - field.field.node.technoloy.field_tech_profile_image
-    - field.field.node.technoloy.field_title
+    - field.field.node.technoloy.field_techbanner_image
     - node.type.technoloy
   module:
     - image
+    - layout_builder
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Title
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Banner image '
+          context_mapping: {  }
+        components:
+          fe7c46b3-8735-4375-880e-16dcb78b7e3d:
+            uuid: fe7c46b3-8735-4375-880e-16dcb78b7e3d
+            region: content
+            configuration:
+              id: 'field_block:node:technoloy:field_techbanner_image'
+              label: 'techbanner image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Content block'
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          d2d2559e-b532-4a35-bf08-b940aadb41d7:
+            uuid: d2d2559e-b532-4a35-bf08-b940aadb41d7
+            region: first
+            configuration:
+              id: 'field_block:node:technoloy:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          83119832-0134-4f14-94bf-c8379d6e149f:
+            uuid: 83119832-0134-4f14-94bf-c8379d6e149f
+            region: second
+            configuration:
+              id: 'field_block:node:technoloy:field_tech_profile_image'
+              label: 'tech profile image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: media_library
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4d4c53ac-091f-4513-8c1a-f419f4a5b938:
+            uuid: 4d4c53ac-091f-4513-8c1a-f419f4a5b938
+            region: content
+            configuration:
+              id: 'field_block:node:technoloy:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          dc2c276a-e1e5-4d3c-902d-0130b4af2197:
+            uuid: dc2c276a-e1e5-4d3c-902d-0130b4af2197
+            region: content
+            configuration:
+              id: 'extra_field_block:node:technoloy:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          721e0c55-5fc2-4b0e-9abf-65bc77c43cf2:
+            uuid: 721e0c55-5fc2-4b0e-9abf-65bc77c43cf2
+            region: content
+            configuration:
+              id: 'field_block:node:technoloy:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
 id: node.technoloy.default
 targetEntityType: node
 bundle: technoloy
@@ -23,6 +165,17 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
   field_tech_profile_image:
     type: image
     label: above
@@ -34,17 +187,21 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
-  field_title:
-    type: string
+  field_techbanner_image:
+    type: image
     label: above
     settings:
-      link_to_entity: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 102
+    weight: 104
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: d86b34e2-d81c-4411-97e1-77a1ab208bb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_points
+  module:
+    - options
+id: contact_message.personal.field_points
+field_name: field_points
+entity_type: contact_message
+bundle: personal
+label: Points
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

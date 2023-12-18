@@ -1,0 +1,8 @@
+uuid: cddd4410-ea2f-4aa2-a7cf-6c3059f0a5ad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tech types'
+vid: tech_types
+description: ''
+weight: 0

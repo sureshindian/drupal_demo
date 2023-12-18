@@ -1,0 +1,22 @@
+uuid: 22182021-502c-4674-af7a-47628c47f823
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - disney
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: disney_content
+theme: disney
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

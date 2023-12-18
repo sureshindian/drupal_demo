@@ -1,0 +1,45 @@
+uuid: fc963215-f771-40be-a28b-ea67cec01b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movie_videos.field_movie_video_image
+    - field.field.paragraph.movie_videos.field_movie_video_link
+    - field.field.paragraph.movie_videos.field_movie_video_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.movie_videos
+  module:
+    - image
+    - link
+id: paragraph.movie_videos.default
+targetEntityType: paragraph
+bundle: movie_videos
+mode: default
+content:
+  field_movie_video_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_movie_video_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_movie_video_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

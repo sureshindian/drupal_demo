@@ -1,0 +1,21 @@
+uuid: 2d014927-c2a5-432b-b336-8af4eab9152a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_country
+  module:
+    - options
+id: contact_message.personal.field_country
+field_name: field_country
+entity_type: contact_message
+bundle: personal
+label: country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

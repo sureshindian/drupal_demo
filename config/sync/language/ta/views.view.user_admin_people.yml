@@ -1,0 +1,59 @@
+label: நபர்கள்
+display:
+  default:
+    display_title: இயல்பான
+    display_options:
+      title: நபர்கள்
+      fields:
+        name:
+          label: பயனர்பெயர்
+        status:
+          label: நிலை
+          settings:
+            format_custom_false: தடுக்கப்பட்டது
+            format_custom_true: நடைமுறையிலுள்ளது
+        roles_target_id:
+          label: பாத்திரங்கள்
+        created:
+          label: பயனாளராக
+        access:
+          label: 'கடைசி அனுகல்'
+        operations:
+          label: செயல்பாடுகள்
+        mail:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'அடுத்த ›'
+            previous: '‹ முந்திய'
+          expose:
+            items_per_page_options_all_label: '- அனைத்தும் -'
+      exposed_form:
+        options:
+          submit_button: வடிகட்டி
+          reset_button_label: மீளமை
+          exposed_sorts_label: வரிசையாக
+      filters:
+        status:
+          group_info:
+            label: நிலை
+            group_items:
+              1:
+                title: நடைமுறையிலுள்ளது
+              2:
+                title: தடுக்கப்பட்டது
+        roles_target_id:
+          expose:
+            label: பாத்திரம்
+        permission:
+          expose:
+            label: அனுமதி
+      use_more_text: மேலும்
+  page_1:
+    display_title: பக்கம்
+    display_options:
+      menu:
+        title: பட்டியல்
+      tab_options:
+        title: நபர்கள்

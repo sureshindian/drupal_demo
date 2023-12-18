@@ -1,0 +1,18 @@
+uuid: 9fabbf9b-7ac0-4ff0-8c23-f141c8087a54
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Movies
+type: movies
+description: 'Disney Movie page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

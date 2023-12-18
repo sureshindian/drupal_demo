@@ -1,0 +1,22 @@
+uuid: 12fc5051-7b7b-447c-a434-a61c02c6b11b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tech_types
+id: taxonomy_term.tech_types.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tech_types
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

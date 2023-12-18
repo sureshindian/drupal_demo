@@ -1,0 +1,22 @@
+uuid: bc530fc6-7fad-411e-8c33-801df3b324de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - disney
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: disney_breadcrumbs
+theme: disney
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

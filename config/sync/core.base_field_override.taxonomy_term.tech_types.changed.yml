@@ -1,0 +1,18 @@
+uuid: ec6c77f3-4869-4719-a9bb-ae66d9b965a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tech_types
+id: taxonomy_term.tech_types.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tech_types
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

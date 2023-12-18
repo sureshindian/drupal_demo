@@ -1,0 +1,21 @@
+uuid: 082eaa34-26e3-4321-8ef0-4781ca40d880
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_user
+  theme:
+    - bootstrap5
+id: bootstrap5_customuserblock
+theme: bootstrap5
+region: footer
+weight: 0
+provider: null
+plugin: custom_user_block
+settings:
+  id: custom_user_block
+  label: 'Custom user block'
+  label_display: visible
+  provider: custom_user
+  prefix: ''
+visibility: {  }

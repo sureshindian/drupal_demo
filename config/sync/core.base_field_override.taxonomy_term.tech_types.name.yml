@@ -1,0 +1,18 @@
+uuid: ee678af8-5f10-4da5-8be3-d2e2d2bc23f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tech_types
+id: taxonomy_term.tech_types.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tech_types
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: cfd824dd-94bd-4d84-a8cb-bea26be25447
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_time_
+id: contact_message.personal.field_time_
+field_name: field_time_
+entity_type: contact_message
+bundle: personal
+label: 'Time '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp
